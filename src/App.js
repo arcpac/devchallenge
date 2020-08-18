@@ -10,6 +10,7 @@ import TablePagination from '@material-ui/core/TablePagination';
 import TableRow from '@material-ui/core/TableRow';
 import axios from 'axios';
 import Users from './components/Users';
+import Users1 from './components/Users1';
 
 function App() {
 
@@ -34,11 +35,11 @@ function App() {
 
     fetchUsers();
   }, []);
-
   return (
     <div className="app">
       My app
-      <Users users={users} loading={loading} />
+      {/* <Users users={users} loading={loading} /> */}
+      <Users1 users={users} loading={loading} />
     </div>
   );
 

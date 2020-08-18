@@ -38,7 +38,6 @@ const Users = ({ users, loading }) => {
     if (loading) {
         return <h2>Loading ... </h2>;
     }
-    console.log(users);
     return (
         <TableContainer component={Paper}>
             <Table className={classes.table} aria-label="customized table">
